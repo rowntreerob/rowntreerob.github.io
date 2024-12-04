@@ -4,17 +4,17 @@
 <p class="has-line-data" data-line-start="3" data-line-end="9">see <em>quick start</em> section <a href="https://github.com/All-Hands-AI/OpenHands">Covered here</a> for details on getting the proper container project for Open Hands running on a docker instance on localhost. IMO a mac OS platform or linux platform are your better bets using docker.<br>
 <code>docker start openhands-app</code><br>
 Having used the longer, <em>docker run</em> syntax once as mentioned in the quick start, starting up the container is a simple, one-liner in a terminal window.<br>
-![P1](file:///mnt/chromeos/MyFiles/Downloads/ss_4.png)<br>
+![P1](./ss_4.png)<br>
 img note - once the container starts up and once you have used chrome to request<br>
 <code>localhost:3000</code> the browser loads the open hands dashboard where you prompt in the upper left-side.</p>
 <h3 class="code-line" data-line-start=9 data-line-end=10 ><a id="Prompts_are_how_you_communicate_over_back_n_forth_dialog_9"></a>Prompts are how you communicate over back n forth dialog</h3>
 <p class="has-line-data" data-line-start="10" data-line-end="14">per the above image extreme upper left-hand side<br>
 <code>based on clone of ...</code><br>
 Tells the AI about a git project for stocks that will be employed. Submit the prompt. After the AI goes to work on consuming the request, forming its response, the left-hand dialog box expands rendering a series of reply’s from the AI following prompts submitted to the AI.<br>
-![P1](file:///mnt/chromeos/MyFiles/Downloads/ss_3.png)</p>
+![P1](./ss_3.png)</p>
 <h3 class="code-line" data-line-start=14 data-line-end=15 ><a id="Error_correction_to_indents__configpy_14"></a>Error correction to indents - <a href="http://config.py">config.py</a></h3>
 <p class="has-line-data" data-line-start="15" data-line-end="18">After the git clone prompt and detailed reply on what the AI has loaded to the workspace, a 2nd prompt which you can see at the bottom of img-2 details a manual edit on <a href="http://file=config.py">file=config.py</a> which should result in definition of the projects data - yfinance closing prices over a 10 year period for a selection of about 10 mutual fund short names. Note that in the upper right-hand panel, post edit you will see live edit window on the file with AI’s edits that are almost perfect. In this narrow case, I needed to manually edit, applying fixes to AI errors of proper python indenting in the <a href="http://config.py">config.py</a> the cause of runtime errors you can see at lower right-hand side in the console pane.<br>
-![P1](file:///mnt/chromeos/MyFiles/Downloads/ss_2.png)<br>
+![P1](./ss_2.png)<br>
 Here the <a href="http://config.py">config.py</a> file with the manual edits correcting the indent error from the AI edits on the file. Even tho the prompt explicitly commanded the AI to observe indent rules, the automated output threw runtime errors when <a href="http://main.py">main.py</a> attempted a read on <a href="http://config.py">config.py</a> file, Your file should look like this and the project’s <a href="http://main.py">main.py</a> should run producing output like you see</p>
 <h3 class="code-line" data-line-start=18 data-line-end=19 ><a id="Detailed_Prompts_and_AI_Reply_18"></a>Detailed Prompt’s and AI Reply</h3>
 <p class="has-line-data" data-line-start="20" data-line-end="21">each step in the following detailed dialog is from the left-hand panel. Your first time thru the project you may simply copy these Prompts which are marked with <strong>&gt;&gt;</strong> for prompt and <strong>&lt;&lt;&lt;</strong> for AI reply. a button press submits each successive prompt to the LLM. Response usually contain recommended next steps.</p>
@@ -112,5 +112,5 @@ I’ll use Python with seaborn to create the heatmap, filtering values less than
 <li class="has-line-data" data-line-start="104" data-line-end="105">Add any additional features to the visualization?</li>
 </ol>
 <h3 class="code-line" data-line-start=105 data-line-end=106 ><a id="View_the_output_as_a_Heatmap_105"></a>View the output as a Heatmap</h3>
-<p class="has-line-data" data-line-start="106" data-line-end="108">![P1](file:///mnt/chromeos/MyFiles/Downloads/ss_1.png)<br>
+<p class="has-line-data" data-line-start="106" data-line-end="108">![P1](./ss.png)<br>
 a file containing the heatmap image presents the analysis of a statistics run on the degree of correlation on the comparison variable (last price ) Highly correlated mutual funds are included where r* &gt; 0.9 indicating a high degree of correlation. To view the heat map in the dashboard, double click on the filename provided by the AI telling you where to find the heat map results.</p>
