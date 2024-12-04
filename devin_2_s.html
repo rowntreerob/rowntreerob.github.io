@@ -1,0 +1,116 @@
+<h2 class="code-line" data-line-start=0 data-line-end=1 ><a id="CTWC__Demo_homework_as_done_by_Open_Hands_AI_0"></a>CTWC - Demo homework as done by Open Hands AI</h2>
+<p class="has-line-data" data-line-start="1" data-line-end="2">On github, use a generic project w data-layer, analysis layer and graphics presentation layer to provide a getting started exper with <em>Code-that-writes-code</em> using Open Hands framework. Present it to nooby’s in documentation format where they can open this README in one panel alongside a 2nd panel in which they have Open Hands dashboard in chrome at <em>localhost:3000</em>.</p>
+<h3 class="code-line" data-line-start=2 data-line-end=3 ><a id="Get_Started_AI_Dashboard_2"></a>Get Started, AI Dashboard</h3>
+<p class="has-line-data" data-line-start="3" data-line-end="9">see <em>quick start</em> section <a href="https://github.com/All-Hands-AI/OpenHands">Covered here</a> for details on getting the proper container project for Open Hands running on a docker instance on localhost. IMO a mac OS platform or linux platform are your better bets using docker.<br>
+<code>docker start openhands-app</code><br>
+Having used the longer, <em>docker run</em> syntax once as mentioned in the quick start, starting up the container is a simple, one-liner in a terminal window.<br>
+![P1](file:///mnt/chromeos/MyFiles/Downloads/ss_4.png)<br>
+img note - once the container starts up and once you have used chrome to request<br>
+<code>localhost:3000</code> the browser loads the open hands dashboard where you prompt in the upper left-side.</p>
+<h3 class="code-line" data-line-start=9 data-line-end=10 ><a id="Prompts_are_how_you_communicate_over_back_n_forth_dialog_9"></a>Prompts are how you communicate over back n forth dialog</h3>
+<p class="has-line-data" data-line-start="10" data-line-end="14">per the above image extreme upper left-hand side<br>
+<code>based on clone of ...</code><br>
+Tells the AI about a git project for stocks that will be employed. Submit the prompt. After the AI goes to work on consuming the request, forming its response, the left-hand dialog box expands rendering a series of reply’s from the AI following prompts submitted to the AI.<br>
+![P1](file:///mnt/chromeos/MyFiles/Downloads/ss_3.png)</p>
+<h3 class="code-line" data-line-start=14 data-line-end=15 ><a id="Error_correction_to_indents__configpy_14"></a>Error correction to indents - <a href="http://config.py">config.py</a></h3>
+<p class="has-line-data" data-line-start="15" data-line-end="18">After the git clone prompt and detailed reply on what the AI has loaded to the workspace, a 2nd prompt which you can see at the bottom of img-2 details a manual edit on <a href="http://file=config.py">file=config.py</a> which should result in definition of the projects data - yfinance closing prices over a 10 year period for a selection of about 10 mutual fund short names. Note that in the upper right-hand panel, post edit you will see live edit window on the file with AI’s edits that are almost perfect. In this narrow case, I needed to manually edit, applying fixes to AI errors of proper python indenting in the <a href="http://config.py">config.py</a> the cause of runtime errors you can see at lower right-hand side in the console pane.<br>
+![P1](file:///mnt/chromeos/MyFiles/Downloads/ss_2.png)<br>
+Here the <a href="http://config.py">config.py</a> file with the manual edits correcting the indent error from the AI edits on the file. Even tho the prompt explicitly commanded the AI to observe indent rules, the automated output threw runtime errors when <a href="http://main.py">main.py</a> attempted a read on <a href="http://config.py">config.py</a> file, Your file should look like this and the project’s <a href="http://main.py">main.py</a> should run producing output like you see</p>
+<h3 class="code-line" data-line-start=18 data-line-end=19 ><a id="Detailed_Prompts_and_AI_Reply_18"></a>Detailed Prompt’s and AI Reply</h3>
+<p class="has-line-data" data-line-start="20" data-line-end="21">each step in the following detailed dialog is from the left-hand panel. Your first time thru the project you may simply copy these Prompts which are marked with <strong>&gt;&gt;</strong> for prompt and <strong>&lt;&lt;&lt;</strong> for AI reply. a button press submits each successive prompt to the LLM. Response usually contain recommended next steps.</p>
+<h3 class="code-line" data-line-start=22 data-line-end=23 ><a id="_1_22"></a>&gt;&gt; 1</h3>
+<p class="has-line-data" data-line-start="24" data-line-end="28">edit <a href="http://config.py">config.py</a> with the following:<br>
+change the list of stock names to the following list:<br>
+FXAIX, ftec, fcom, FSSNX, FLCOX, FMDGX, FSPGX, FSPSX, fhlc, fidu<br>
+change start-date to ‘2010-01-01’ change end-date to ‘2020-01-01’ and change api-key to ‘tqL5zKpU-szMMEiY8qrd’ making sure to preserve python indent syntax in the <a href="http://config.py">config.py</a> file</p>
+<h3 class="code-line" data-line-start=28 data-line-end=29 ><a id="_1_28"></a>&lt;&lt;&lt; 1</h3>
+<p class="has-line-data" data-line-start="29" data-line-end="30">I’ve made all the requested changes:</p>
+<ol>
+<li class="has-line-data" data-line-start="30" data-line-end="31">Updated the list of stock names to FXAIX, FTEC, FCOM, FSSNX, FLCOX, FMDGX, FSPGX, FSPSX, FHLC, and FIDU</li>
+<li class="has-line-data" data-line-start="31" data-line-end="32">Changed the start date to ‘2010-01-01’</li>
+<li class="has-line-data" data-line-start="32" data-line-end="33">Changed the end date to ‘2020-01-01’</li>
+<li class="has-line-data" data-line-start="33" data-line-end="35">Set the API key to ‘tqL5zKpU-szMMEiY8qrd’</li>
+</ol>
+<p class="has-line-data" data-line-start="35" data-line-end="36">The changes have been made while preserving the Python indentation syntax. Would you like me to verify the contents of the files or help you with anything else?</p>
+<p class="has-line-data" data-line-start="37" data-line-end="38">-I’ll help you run the analysis with the updated configuration. First, let’s check the requirements and install them:</p>
+<p class="has-line-data" data-line-start="39" data-line-end="40">-That’s strange, the requirements.txt file appears to be empty. Let me check the <a href="http://main.py">main.py</a> file to see what packages we need:</p>
+<p class="has-line-data" data-line-start="41" data-line-end="42">-I can see we need the following packages:</p>
+<ul>
+<li class="has-line-data" data-line-start="42" data-line-end="43">nasdaqdatalink</li>
+<li class="has-line-data" data-line-start="43" data-line-end="44">yfinance</li>
+<li class="has-line-data" data-line-start="44" data-line-end="46">pandas</li>
+</ul>
+<p class="has-line-data" data-line-start="46" data-line-end="47">Let’s install them:</p>
+<p class="has-line-data" data-line-start="48" data-line-end="50">-Now let’s run this version:<br>
+-Great! The analysis has completed successfully. Here’s what we found:</p>
+<ol>
+<li class="has-line-data" data-line-start="51" data-line-end="52">We have correlation data for all 10 funds</li>
+<li class="has-line-data" data-line-start="52" data-line-end="53">The analysis used 117 complete data points (this is limited by FMDGX which had the least data)</li>
+<li class="has-line-data" data-line-start="53" data-line-end="59">The correlations show:
+<ul>
+<li class="has-line-data" data-line-start="54" data-line-end="55">All funds are positively correlated with each other</li>
+<li class="has-line-data" data-line-start="55" data-line-end="56">FXAIX (Fidelity 500 Index) has very high correlation with FTEC (Technology), FLCOX, and FSPGX</li>
+<li class="has-line-data" data-line-start="56" data-line-end="57">FHLC (Healthcare) and FIDU (Industrials) show relatively lower correlations with other funds</li>
+<li class="has-line-data" data-line-start="57" data-line-end="59">FSPSX (International Index) shows strong correlation with FXAIX but lower with sector-specific funds</li>
+</ul>
+</li>
+</ol>
+<p class="has-line-data" data-line-start="59" data-line-end="60">The results have been saved to out.csv. Would you like me to help you interpret any specific correlations or make any modifications to the analysis?</p>
+<p class="has-line-data" data-line-start="61" data-line-end="62">-The analysis has completed successfully with the updated configuration. The results show:</p>
+<ol>
+<li class="has-line-data" data-line-start="63" data-line-end="68">
+<p class="has-line-data" data-line-start="63" data-line-end="64">Data availability:</p>
+<ul>
+<li class="has-line-data" data-line-start="64" data-line-end="65">Most funds have data for the full period (1258 data points)</li>
+<li class="has-line-data" data-line-start="65" data-line-end="66">FLCOX and FSPGX have 892 data points</li>
+<li class="has-line-data" data-line-start="66" data-line-end="68">FMDGX has only 117 data points, which limits our correlation analysis to this number of points</li>
+</ul>
+</li>
+<li class="has-line-data" data-line-start="68" data-line-end="74">
+<p class="has-line-data" data-line-start="68" data-line-end="69">Key correlations:</p>
+<ul>
+<li class="has-line-data" data-line-start="69" data-line-end="70">FXAIX (Fidelity 500 Index) is highly correlated with FTEC (0.989) and FLCOX (0.989)</li>
+<li class="has-line-data" data-line-start="70" data-line-end="71">FTEC and FSPGX have the highest correlation (0.993)</li>
+<li class="has-line-data" data-line-start="71" data-line-end="72">FSPSX (International) and FHLC (Healthcare) show the lowest correlation (0.874)</li>
+<li class="has-line-data" data-line-start="72" data-line-end="74">All correlations are positive and relatively high (&gt;0.84)</li>
+</ul>
+</li>
+</ol>
+<p class="has-line-data" data-line-start="74" data-line-end="75">The results have been saved to out.csv. Would you like me to:</p>
+<ol>
+<li class="has-line-data" data-line-start="75" data-line-end="76">Analyze any specific correlations in more detail?</li>
+<li class="has-line-data" data-line-start="76" data-line-end="77">Modify the analysis period to get more complete data?</li>
+<li class="has-line-data" data-line-start="77" data-line-end="78">Help you interpret any particular relationships between the funds?</li>
+</ol>
+<h3 class="code-line" data-line-start=78 data-line-end=79 ><a id="_2_78"></a>&gt;&gt; 2</h3>
+<p class="has-line-data" data-line-start="79" data-line-end="81"><a href="http://main.py">main.py</a> output is an array containing numeric data<br>
+along with labels in row 1 and column 1. this is standard input for a process present the array data as a correlation heat map.  use a filter to blank out cells that have number values less than +0.9. Display the heat map as an image</p>
+<h3 class="code-line" data-line-start=81 data-line-end=82 ><a id="_2_81"></a>&lt;&lt;&lt; 2</h3>
+<p class="has-line-data" data-line-start="82" data-line-end="84">I’ll help you create a correlation heat map from the data in out.csv.<br>
+I’ll use Python with seaborn to create the heatmap, filtering values less than 0.9:</p>
+<h3 class="code-line" data-line-start=84 data-line-end=85 ><a id="_3_84"></a>&gt;&gt; 3</h3>
+<h3 class="code-line" data-line-start=85 data-line-end=86 ><a id="_3_85"></a>&lt;&lt;&lt; 3</h3>
+<p class="has-line-data" data-line-start="86" data-line-end="87">I’ve created a heatmap with the following features:</p>
+<ol>
+<li class="has-line-data" data-line-start="87" data-line-end="88">Only shows correlations ≥ 0.9</li>
+<li class="has-line-data" data-line-start="88" data-line-end="89">Uses a yellow-orange-red color scheme where darker red indicates higher correlation</li>
+<li class="has-line-data" data-line-start="89" data-line-end="90">Shows the correlation values to 3 decimal places</li>
+<li class="has-line-data" data-line-start="90" data-line-end="92">Saved as ‘heatmap.png’ in high resolution (300 DPI)</li>
+</ol>
+<p class="has-line-data" data-line-start="92" data-line-end="93">Let me verify the image was created:</p>
+<p class="has-line-data" data-line-start="94" data-line-end="95">-The heatmap has been created successfully. The image shows only the strong correlations (≥ 0.9) between the funds, making it easy to identify the most highly correlated pairs. The blank (white) cells indicate correlations below 0.9.</p>
+<p class="has-line-data" data-line-start="96" data-line-end="97">Some observations from the heatmap:</p>
+<ol>
+<li class="has-line-data" data-line-start="97" data-line-end="98">FXAIX (Fidelity 500 Index) shows very strong correlations with several funds</li>
+<li class="has-line-data" data-line-start="98" data-line-end="99">FTEC and FSPGX have one of the strongest correlations</li>
+<li class="has-line-data" data-line-start="99" data-line-end="101">Some funds like FHLC show fewer strong correlations with other funds</li>
+</ol>
+<p class="has-line-data" data-line-start="101" data-line-end="102">Would you like me to:</p>
+<ol>
+<li class="has-line-data" data-line-start="102" data-line-end="103">Modify the heatmap appearance (colors, size, font, etc.)?</li>
+<li class="has-line-data" data-line-start="103" data-line-end="104">Adjust the correlation threshold (currently 0.9)?</li>
+<li class="has-line-data" data-line-start="104" data-line-end="105">Add any additional features to the visualization?</li>
+</ol>
+<h3 class="code-line" data-line-start=105 data-line-end=106 ><a id="View_the_output_as_a_Heatmap_105"></a>View the output as a Heatmap</h3>
+<p class="has-line-data" data-line-start="106" data-line-end="108">![P1](file:///mnt/chromeos/MyFiles/Downloads/ss_1.png)<br>
+a file containing the heatmap image presents the analysis of a statistics run on the degree of correlation on the comparison variable (last price ) Highly correlated mutual funds are included where r* &gt; 0.9 indicating a high degree of correlation. To view the heat map in the dashboard, double click on the filename provided by the AI telling you where to find the heat map results.</p>
