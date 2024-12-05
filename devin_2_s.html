@@ -15,7 +15,8 @@ Tells the AI about a <a href="https://github.com/Erfaniaa/financial-indexes-corr
 <img style="width: 95vw;" src="./ss_3.png" alt="dashbrd 2" />
 <h3 class="code-line" data-line-start=14 data-line-end=15 ><a id="Error_correction_to_indents__configpy_14"></a>Error correction to indents - <a href="http://config.py">config.py</a></h3>
 <p class="has-line-data" data-line-start="15" data-line-end="18">After the git clone prompt and detailed reply on what the AI has loaded to the workspace, a 2nd prompt which you can see at the bottom of img-2 details a manual edit on <a href="http://file=config.py">file=config.py</a> which should result in definition of the projects data - yfinance closing prices over a 10 year period for a selection of about 10 mutual fund short names. Note that in the upper right-hand panel, post edit you will see live edit window on the file with AI’s edits that are almost perfect. In this narrow case, I needed to manually edit, applying fixes to AI errors of proper python indenting in the <a href="http://config.py">config.py</a> the cause of runtime errors you can see at lower right-hand side in the console pane.<br>
-<img style="width: 95vw;" src="./ss_2.png" alt="dashbrd 3" /><br>
+<p>To get an API key for the stock data api, using that key at *YOU_KEY_VAL* below, go <a href="https://data.nasdaq.com/sign-up">here</a></p>
+    <img style="width: 95vw;" src="./ss_2.png" alt="dashbrd 3" /><br>
 Here the <a href="http://config.py">config.py</a> file with the manual edits correcting the indent error from the AI edits on the file. Even tho the prompt explicitly commanded the AI to observe indent rules, the automated output threw runtime errors when <a href="http://main.py">main.py</a> attempted a read on <a href="http://config.py">config.py</a> file, Your file should look like this and the project’s <a href="http://main.py">main.py</a> should run producing output like you see</p>
 <h3 class="code-line" data-line-start=18 data-line-end=19 ><a id="Detailed_Prompts_and_AI_Reply_18"></a>Detailed Prompt’s and AI Reply</h3>
 <p class="has-line-data" data-line-start="20" data-line-end="21">each step in the following detailed dialog is from the left-hand panel. Your first time thru the project you may simply copy these Prompts which are marked with <strong>&gt;&gt;</strong> for prompt and <strong>&lt;&lt;&lt;</strong> for AI reply. a button press submits each successive prompt to the LLM. Response usually contain recommended next steps.</p>
@@ -23,14 +24,14 @@ Here the <a href="http://config.py">config.py</a> file with the manual edits cor
 <p class="has-line-data" data-line-start="24" data-line-end="28">edit <a href="http://config.py">config.py</a> with the following:<br>
 change the list of stock names to the following list:<br>
 FXAIX, ftec, fcom, FSSNX, FLCOX, FMDGX, FSPGX, FSPSX, fhlc, fidu<br>
-change start-date to ‘2010-01-01’ change end-date to ‘2020-01-01’ and change api-key to ‘tqL5zKpU-szMMEiY8qrd’ making sure to preserve python indent syntax in the <a href="http://config.py">config.py</a> file</p>
+change start-date to ‘2010-01-01’ change end-date to ‘2020-01-01’ and change api-key to ‘${YOU_KEY_VAL}’ making sure to preserve python indent syntax in the <a href="http://config.py">config.py</a> file</p>
 <h3 class="code-line" data-line-start=28 data-line-end=29 ><a id="_1_28"></a>&lt;&lt;&lt; 1</h3>
 <p class="has-line-data" data-line-start="29" data-line-end="30">I’ve made all the requested changes:</p>
 <ol>
 <li class="has-line-data" data-line-start="30" data-line-end="31">Updated the list of stock names to FXAIX, FTEC, FCOM, FSSNX, FLCOX, FMDGX, FSPGX, FSPSX, FHLC, and FIDU</li>
 <li class="has-line-data" data-line-start="31" data-line-end="32">Changed the start date to ‘2010-01-01’</li>
 <li class="has-line-data" data-line-start="32" data-line-end="33">Changed the end date to ‘2020-01-01’</li>
-<li class="has-line-data" data-line-start="33" data-line-end="35">Set the API key to ‘tqL5zKpU-szMMEiY8qrd’</li>
+<li class="has-line-data" data-line-start="33" data-line-end="35">Set the API key to ‘Your_Key’</li>
 </ol>
 <p class="has-line-data" data-line-start="35" data-line-end="36">The changes have been made while preserving the Python indentation syntax. Would you like me to verify the contents of the files or help you with anything else?</p>
 <p class="has-line-data" data-line-start="37" data-line-end="38">-I’ll help you run the analysis with the updated configuration. First, let’s check the requirements and install them:</p>
