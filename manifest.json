@@ -1,0 +1,14 @@
+{
+    "name": "Legal Instructions",
+    "short_name": "Instructions",
+    "start_url": "./index.html",
+    "display": "standalone",
+    "icons": [
+      {
+        "src": "rights2.png",
+        "sizes": "300x300",
+        "type": "image/png"
+      }
+    ]
+  }
+  
